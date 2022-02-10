@@ -17,6 +17,18 @@
   clear: both;
 }
 
+header nav {
+  height: 100px;
+}
+
+header .btn {
+  color: white;
+  background-color: #00a651;
+  box-shadow: 1px 2px rgb(113, 113, 113);
+}
+a :hover {
+  color: blue;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
