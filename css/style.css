@@ -20,15 +20,20 @@
 header nav {
   height: 100px;
 }
-
-header .btn {
+button a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6%;
+}
+header .btn a {
   color: white;
   background-color: #00a651;
   box-shadow: 1px 2px rgb(113, 113, 113);
+  height: 45px;
 }
-a :hover {
-  color: blue;
-}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
