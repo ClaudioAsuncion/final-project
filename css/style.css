@@ -27,12 +27,10 @@ header nav {
 }
 
 .taskCards {
-  display: inline-block;
-  justify-content: center;
+  width: 170%;
+  padding: 2%;
+  margin: 2%;
 }
-
-
-
 
 /******************************************
 /* BASE STYLES
