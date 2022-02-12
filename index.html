@@ -37,69 +37,122 @@
             <img src="taskdoro.png" alt="" width="300" height="88" />
           </a>
         </div>
-
-        <!-- sidebar/offcanvas -->
       </nav>
     </header>
-
-    <form>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Name..."
-        />
-      </div>
-      <div class="form-group">
-        <label for="description">Description:</label>
-
-        <input
-          type="text-area"
-          class="form-control"
-          id="description"
-          placeholder="Description"
-        />
-      </div>
-      <div class="form-group">
-        <label for="assignedto">Assigned To:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="assignedto"
-          placeholder="Assigned to"
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="date">Due Date:</label>
-        <input type="date" class="form-control" id="date" />
-      </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01"
-            >Status</label
-          >
+    <section class="form">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name..."
+          />
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected>...</option>
-          <option value="1">Work In Progress</option>
-          <option value="2">To Do</option>
-          <option value="3">Completed</option>
-        </select>
+        <div class="form-group">
+          <label for="description">Description:</label>
+
+          <input
+            type="text-area"
+            class="form-control"
+            id="description"
+            placeholder="Description"
+          />
+        </div>
+        <div class="form-group">
+          <label for="assignedto">Assigned To:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="assignedto"
+            placeholder="Assigned to"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Due Date:</label>
+          <input type="date" class="form-control" id="date" />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Status</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>...</option>
+            <option value="1">Work In Progress</option>
+            <option value="2">To Do</option>
+            <option value="3">Completed</option></select
+          ><button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+
+      <!--CARDS-->
+
+
+      <!--
+
+        
+      -->
+  <section class="taskCards">
+      <div class="card" style="width: 18rem;">                
+        <div class="card-body">
+            <h5 class="card-title">Task 1</h5>
+            <p class="card-text">task 1 description</p>
+            <p class="card-text">Aida Bugg</p>
+            <p class="card-text">Due Date: Feb 20 - 2022</p>
+            <span class="badge badge-success">DONE</span>
+            <a href="#" class="btn btn-success">Delete</a>
+        </div>
+      <div class="card" style="width: 18rem;">                
+        <div class="card-body">
+            <h5 class="card-title">Task 2</h5>
+            <p class="card-text">task 2 description</p>
+            <p class="card-text">Aida Bugg</p>
+            <p class="card-text">Due Date: Feb 20 - 2022</p>
+            <span class="badge badge-success">DONE</span>
+            <a href="#" class="btn btn-success">Delete</a>
+        </div>  
+      <div class="card" style="width: 18rem;">                
+        <div class="card-body">
+            <h5 class="card-title">Task 3</h5>
+            <p class="card-text">task 3 description</p>
+            <p class="card-text">Aida Bugg</p>
+            <p class="card-text">Due Date: Feb 20 - 2022</p>
+            <span class="badge badge-success">DONE</span>
+            <a href="#" class="btn btn-success">Delete</a>
+        </div>
+      <div class="card" style="width: 18rem;">                
+      <div class="card-body">
+          <h5 class="card-title">Task 4</h5>
+          <p class="card-text">task 4 description</p>
+          <p class="card-text">Aida Bugg</p>
+          <p class="card-text">Due Date: Feb 20 - 2022</p>
+          <span class="badge badge-success">DONE</span>
+          <a href="#" class="btn btn-success">Delete</a>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+      <div class="card-body ">
+        <h5 class="card-title">Task 5</h5>
+        <p class="card-text">task 5 description</p>
+        <p class="card-text">Aida Bugg</p>
+        <p class="card-text">Due Date: Feb 20 - 2022</p>
+        <span class="badge badge-success">DONE</span>
+        <a href="#" class="btn btn-success">Delete</a>
+    </div>
+    </div>    
+  </section>                                                    
 
-    <ul class="list-group">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Task 1</li>
+        <li class="list-group-item">Task 2</li>
+        <li class="list-group-item">Task 3</li>
+        <li class="list-group-item">Task 4</li>
+        <li class="list-group-item">Task 5</li>
+      </ul>
+    </section>
     <!-- Bootstrap's JavaScript Files -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
