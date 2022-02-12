@@ -3,6 +3,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "lato", sans-serif;
+}
+section {
+  padding: 0rem 4rem;
+}
+nav {
+  width: 100%;
+  margin-bottom: 2rem;
+}
 /* Clear fix hack */
 .clearfix:after {
   content: ".";
@@ -21,15 +31,15 @@ header nav {
   min-height: 10%;
 }
 
-.form {
-  width: 50%;
-  padding: 4rem;
+section form {
+  width: 80%;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
 }
 
-.taskCards {
-  width: 170%;
-  padding: 2%;
-  margin: 2%;
+section ul {
+  width: 80%;
+  padding-top: 2rem;
 }
 
 /******************************************
