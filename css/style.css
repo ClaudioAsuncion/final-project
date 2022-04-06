@@ -34,12 +34,21 @@ header nav {
 section form {
   width: 80%;
   padding-left: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
 }
 
 section ul {
   width: 80%;
   padding-top: 2rem;
+}
+
+.taskCards {
+  padding-bottom: 3rem;
+  width: 80rem;
+}
+
+section ul {
+  padding-bottom: 5rem;
 }
 
 /******************************************
