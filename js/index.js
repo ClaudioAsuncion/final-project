@@ -7,8 +7,12 @@ newTask2.addTask("JS", "Test", "Tierra", 10, status);
 
 // Event Listener for task form
 
-document.getElementById("submitBtn").addEventListener("click", submit);
+const newTaskForm = document.querySelector("#submitBtn");
+newTaskForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
 
-function submit() {
-  alert("its working");
-}
+const newTaskName = document.querySelector("#");
+const newTaskDescription = document.querySelector("#");
+const newTaskAssigned = document.querySelector("#");
+const newTaskDue = document.querySelector("#");
