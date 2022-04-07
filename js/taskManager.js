@@ -5,14 +5,14 @@ class TaskManager {
     this.tasks = [];
     this.currentId = currentId;
   }
-  addTask(name, description, assignedTo, dueDate, status = "todo") {
+  addTask(name, description, assignedTo, dueDate) {
     const newTasks = {
       id: this.currentId++,
       name: name,
       description: description,
       assignedTo: assignedTo,
       dueDate: dueDate,
-      status: status,
+      status: "TODO",
     };
     this.tasks.push(newTasks);
   }
