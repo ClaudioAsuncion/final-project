@@ -1,3 +1,15 @@
+const createTaskHtml = (name, description, assignedto, duedate, status) => {
+  `<div class="card-group">
+          <div class="card h-100 border-dark">
+            <div class="card-header text-white bg-success">${name}</div>
+            <div class="card-body">
+              <p class="card-text">${description}</p>
+              <p class="card-text">${assignedto}</p>
+              <p class="card-text">${duedate}</p>
+              <span class="badge badge-success">${status}</span>
+              <a href="#" class="btn btn-success">Delete</a>
+            </div>`;
+};
 //taskmanager class
 
 class TaskManager {
