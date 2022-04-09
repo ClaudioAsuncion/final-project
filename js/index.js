@@ -12,6 +12,13 @@ newTaskForm.addEventListener("submit", (event) => {
 
   /*
         Validation code here
+        // function validFormInput() {}
+
+// if (!validFormInput()) {
+//   error.innerHTML = "Please Enter Required Inputs";
+// } else {
+//   error.style.display = "none";
+// }
     */
 
   const name = newTaskName.value;
