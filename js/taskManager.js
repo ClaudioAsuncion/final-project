@@ -1,10 +1,10 @@
-const createTaskHtml = (name, description, assignedto, duedate, status) => {
+const createTaskHtml = (name, description, assignedTo, duedate, status) => {
   `<div class="card-group">
           <div class="card h-100 border-dark">
             <div class="card-header text-white bg-success">${name}</div>
             <div class="card-body">
               <p class="card-text">${description}</p>
-              <p class="card-text">${assignedto}</p>
+              <p class="card-text">${assignedTo}</p>
               <p class="card-text">${duedate}</p>
               <span class="badge badge-success">${status}</span>
               <a href="#" class="btn btn-success">Delete</a>
@@ -32,10 +32,23 @@ class TaskManager {
   render() {
     //array to store task
     const tasksHtmlList = [];
-    for (let i = 0; 0 < this.addTask.length; i++) {
-      let currentTask = this.addTask.length;
+    for (let i = 0; i < this.tasks.length; i++) {
+      let currentTask = this.tasks[i];
       let date = new Date(currentTask.dueDate);
-      let formattedDate = date.toString();
+      let formattedDate =
+        date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+      let taskHtml = createTaskHtml(
+        currentTask.name,
+        currentTask.description,
+        currentTask.assignedTo,
+        formattedDate,
+        currentTask.status
+      );
     }
+    tasksHtmlList.push(tasksHtml);
+    taskHtml = tasksHtmlList.join("\n");
+
+    const taskList = document.querySelector("#tasklist");
+    taskList.innerHTML = tasksHtml;
   }
 }

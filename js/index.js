@@ -14,7 +14,7 @@ newTaskForm.addEventListener("submit", (event) => {
   // input selecttion
   const newTaskName = document.querySelector("#name");
   const newTaskDescription = document.querySelector("#description");
-  const newTaskAssigned = document.querySelector("#assignedto");
+  const newTaskAssigned = document.querySelector("#assignedTo");
   const newTaskDue = document.querySelector("#date");
   const error = document.querySelector("#error");
   //form validation
@@ -32,23 +32,23 @@ newTaskForm.addEventListener("submit", (event) => {
   // value of each input
   const taskName = newTaskName.value;
   const description = newTaskDescription.value;
-  const assigned = newTaskAssigned.value;
+  const assignedTo = newTaskAssigned.value;
   const dueDate = newTaskDue.value;
 
-  taskManager.addTask(name, description, assignedTo, dueDate);
+  taskManager.addTask(taskName, description, assignedTo, dueDate);
 
-  //form clearing
-
+  //display render
+  taskManager.render();
   newTaskName.value = "";
   newTaskDescription.value = "";
   newTaskAssigned.value = "";
   newTaskDue.value = "";
 });
 
-let taskHtml = createTaskHtml(
-  "tierra practice",
-  "js practice",
-  "Tierra",
-  "03/03/2022"
-);
-console.log(taskHtml);
+// let taskHtml = createTaskHtml(
+//   "tierra practice",
+//   "js practice",
+//   "Tierra",
+//   "03/03/2022"
+// );
+// console.log(taskHtml);
