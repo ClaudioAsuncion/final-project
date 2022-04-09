@@ -28,13 +28,14 @@ class TaskManager {
     };
     this.tasks.push(newTasks);
   }
+  // render
+  render() {
+    //array to store task
+    const tasksHtmlList = [];
+    for (let i = 0; 0 < this.addTask.length; i++) {
+      let currentTask = this.addTask.length;
+      let date = new Date(currentTask.dueDate);
+      let formattedDate = date.toString();
+    }
+  }
 }
-
-// const task1 = {
-//   id: 1,
-//   name: "Take out the trash",
-//   description: "Take out the trash to the front of the house",
-//   assignedTo: "Nick",
-//   dueDate: "2020-09-20",
-//   status: "TODO",
-// };
