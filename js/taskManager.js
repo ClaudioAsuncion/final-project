@@ -6,7 +6,8 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status) => `
               <p class="card-text">${description}</p>
               <p class="card-text">${assignedTo}</p>
               <p class="card-text">${dueDate}</p>
-              <span class="badge badge-success">${status}/span>
+              <p class="card-text">${status}</p>
+              
              
 `;
 
