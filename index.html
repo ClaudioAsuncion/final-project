@@ -46,40 +46,40 @@
     <section>
       <form id="newTaskForm">
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="newTaskName">Name:</label>
           <input
             type="text"
             class="form-control"
-            id="name"
+            id="newTaskName"
             placeholder="Name..."
             required
           />
         </div>
         <div class="form-group">
-          <label for="description">Description:</label>
+          <label for="newTaskDescription">Description:</label>
 
           <input
             type="text-area"
             class="form-control"
-            id="description"
+            id="newTaskDescription"
             placeholder="Description"
             required
           />
         </div>
         <div class="form-group">
-          <label for="assignedto">Assigned To:</label>
+          <label for="newTaskAssignedTo">Assigned To:</label>
           <input
             type="text"
             class="form-control"
-            id="assignedTo"
+            id="newTaskAssignedTo"
             placeholder="Assigned to"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="date">Due Date:</label>
-          <input type="date" class="form-control" id="date" required />
+          <label for="newTaskDueDate">Due Date:</label>
+          <input type="date" class="form-control" id="newTaskDueDate" required />
         </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -104,19 +104,19 @@
         
       -->
 
-      <section class="taskCards">
+      <section class="taskCards" >
         <div class="card-group">
-          <div class="card h-100 border-dark">
-            <div class="card-header text-white bg-success">Task 1</div>
-            <div class="card-body">
-              <p class="card-text">task 1 description</p>
-              <p class="card-text">Aida Bugg</p>
-              <p class="card-text">Due Date: Feb 20 - 2022</p>
+          <div class="card h-100 border-dark" >
+            <!-- <div class="card-header text-white bg-success">Task 1</div> -->
+            <div class="card-body" >
+              <p class="card-text" id="tasksList"></p>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
               <span class="badge badge-success">DONE</span>
               <a href="#" class="btn btn-success">Delete</a>
             </div>
           </div>
-          <div class="card h-100 border-dark">
+          <!-- <div class="card h-100 border-dark">
             <div class="card-header text-white bg-success">Task 2</div>
             <div class="card-body">
               <p class="card-text">task 2 description</p>
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="card h-100 border-dark">
-            <div class="card-header text-white bg-success">Task 3</div>
+            <div class="card-header text-white bg-success" >Task 3</div>
             <div class="card-body">
               <p class="card-text">task 3 description</p>
               <p class="card-text">Aida Bugg</p>
@@ -156,19 +156,19 @@
               <a href="#" class="btn btn-success">Delete</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
-     <section>
+     <!-- <section>
 
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item border-dark" id="tasklist">Task 1</li>
+      <ul class="list-group list-group-flush" >
+        <li class="list-group-item border-dark" >Task 1</li>
         <li class="list-group-item border-dark">Task 2</li>
         <li class="list-group-item border-dark">Task 3</li>
         <li class="list-group-item border-dark">Task 4</li>
         <li class="list-group-item border-dark">Task 5</li>
       </ul>
-    </section>
+    </section> -->
     <!-- Bootstrap's JavaScript Files -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
