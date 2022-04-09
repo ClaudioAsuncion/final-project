@@ -44,3 +44,11 @@ newTaskForm.addEventListener("submit", (event) => {
   newTaskAssigned.value = "";
   newTaskDue.value = "";
 });
+
+let taskHtml = createTaskHtml(
+  "tierra practice",
+  "js practice",
+  "Tierra",
+  "03/03/2022"
+);
+console.log(taskHtml);
