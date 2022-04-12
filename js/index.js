@@ -102,6 +102,8 @@ taskList.addEventListener("click", function (event) {
 
 // console.log(createTaskHtml('Take out trash','Take out trash in the bedrooms','Mathew','Today','done'))
 
+// console.log(createTaskHtml('Take out trash','Take out trash in the bedrooms','Mathew','Today','done'))
+
 // const taskManager = new TaskManager(0);
 
 // const newTaskForm = document.querySelector("#newTaskForm");

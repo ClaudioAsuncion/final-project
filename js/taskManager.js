@@ -14,7 +14,7 @@ const createTaskHtml = (name, description, assigned, date, status, id) => {
             <p>${description}</p>
             
             <div class="d-flex w-100 mb-3 justify-content-end">
-                <button class="done-button btn btn-primary invisible" type="button">Mark As Done</button>
+                <button class="done-button btn btn-success invisible" type="button">Mark As Done</button>
                 <button class="delete-button btn btn-danger ml-1" type="button">Delete Task</button>
             </div>
         </li>
@@ -32,8 +32,8 @@ const createTaskHtml = (name, description, assigned, date, status, id) => {
             </div>
             <p>${description}</p>
             <div class="d-flex w-100 mb-3 justify-content-end">
-                <button class="done-button btn btn-success " type="button">Mark As Done</button>
-                <button class="delete-button btn btn-success ml-1 test" type="button">Delete Task</button>
+                <button class="done-button btn btn-success" type="button">Mark As Done</button>
+                <button class="delete-button btn btn-danger ml-1" type="button">Delete Task</button>
             </div>
         </li>
         `;
@@ -125,4 +125,4 @@ class TaskManager {
   }
 }
 
-// module.exports = TaskManager;
+module.exports = TaskManager;

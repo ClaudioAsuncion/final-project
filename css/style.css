@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 section {
   padding: 0rem 4rem;
@@ -27,10 +27,14 @@ nav {
   clear: both;
 }
 
-header nav {
+header {
   min-height: 10%;
+  background-color: rgba(240, 240, 240, 0.328);
+  text-align: center;
 }
-
+img {
+  margin: 1rem;
+}
 section form {
   width: 80%;
   padding-left: 4rem;
@@ -54,10 +58,27 @@ section ul {
 h2 {
   text-align: center;
 }
-
-.test {
-  background-color: #f07470;
+h3 {
+  text-decoration: underline;
+  text-align: center;
 }
+
+.delete-button {
+  background-color: #f07470;
+  border: none;
+}
+/* .test:hover {
+  background-color: #dc1c13;
+} */
+.hide-alert {
+  background-color: white;
+  border: none;
+}
+.container {
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
