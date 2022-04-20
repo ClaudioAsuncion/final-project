@@ -59,8 +59,8 @@ h2 {
   text-align: center;
 }
 h3 {
-  text-decoration: underline;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .delete-button {
@@ -78,7 +78,10 @@ h3 {
   padding: 3rem;
   font-size: 1.2rem;
 }
-
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
